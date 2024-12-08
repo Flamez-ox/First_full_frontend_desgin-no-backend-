@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your trip with us today Beautiful Bahir Dar</title>
+    <!-- Meta Description (Important for SEO) -->
+    <meta name="description" content="Book your trip with us today Beautiful Bahir Dar">
+
+    <!-- Meta Keywords (Deprecated for SEO but can be useful for other contexts) -->
+    <meta name="keywords" content="Best Travel and Tour Experience, Tour, Travel, Blue Nile, Lake Tana, Bahir Dar, Ethiopia">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- For Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link id="theme-stylesheet" rel="stylesheet" href="light/styles.css">
+</head>
+<body>
+    <!-- Header -->
+     
+    <header class="header">
+        <div class="container">
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+
+            <div class="logo">
+                <img src="images/LOGO1.png" alt="logo">
+                    <p>Project of students of CULS, for educational purpose</p>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a onclick="toggleMenu()">Explore ▼</a>
+                        <div class="dropdown-content">
+                            <a href="explore.html">Events</a>
+                            <a href="gallery.html">Gallery</a> 
+                            <a href="accomdation.html">Accomodations</a> 
+                            
+                        </div>
+                        
+                    </li>
+                    <li class="active"><a href="book-trip.html">Bookings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="show-login-btn" onclick="showLogin()"><i class="fa-solid fa-user"></i></button></li>
+                    
+                </ul>
+                <form class="search-box">
+                    <input type="text">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown" >
+                <a onclick="toggleMenu()">Explore ▼</a>
+                <div class="dropdown-content" id="dropdown-content">
+                    <a href="explore.html">Events</a>
+                    <a href="gallery.html">Gallery</a> 
+                    <a href="accomdation.html">Accomodations</a> 
+                    
+                </div>
+                
+            </li>
+            <li><a href="book-trip.html">Bookings</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="show-login-btn" onclick="showLogin()">Login <i class="fa-solid fa-user"></i></button>
+    </nav>
+    <br>
+    <br>
+    <main>
+        <!-- Hero Section -->
+        <section class="book-section">
+            <div class="content">
+                <h2>Book your trip with us today</h2>
+            </div>
+        </section>  
+        <section class="booking-section">
+    <div class="booking-container">
+        <!-- Booking Form Section -->
+        <div class="form-container">
+            <h2>Book Your Trip</h2>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="" disabled selected>Select your destination</option>
+                    <option value="beach">Beach</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="city">City</option>
+                </select>
+                <label for="destination">Dates</label>
+                <input type="date"><input type="date">
+                <label for="destination">To</label>
+
+                
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" placeholder="Enter any additional requests or notes"></textarea>
+                
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="payment-container">
+            <h2>Payment Options</h2>
+            <div class="payment-options">
+                <img src="images/contact/credit-card.png" alt="Credit Card" title="Pay with Credit Card">
+                <img src="images/contact/paypal.png" alt="PayPal" title="Pay with PayPal">
+                <img src="images/contact/stripe.png" alt="Stripe" title="Pay with Stripe">
+                <img src="images/contact/apple-pay.png" alt="Apple Pay" title="Pay with Apple Pay">
+            </div>
+            <p class="payment-note">
+                All transactions are secure and encrypted. You can select your preferred payment option.
+            </p>
+        </div>
+    </div>
+</section>
+         <footer>
+            <div class="footer">
+                <div class="footer-section about-us">
+                    <img src="images/LOGO1.png" alt="logo">
+                    <h3>About Us</h3>
+                    <p>
+                        We believe every trip should be as unique as you are. Whether it’s a romantic honeymoon, a solo backpacking adventure, or a group excursion, we ensure that your journey is filled with wonder, relaxation, and unforgettable moments.
+
+Let us guide you to the best tour and travel experiences of your life. Explore the world with Best Travel and Tour Experience, where adventure and comfort meet.
+
+
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="book-trip.html">Bookings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Tel: <a href="Tel:+420739972476">+420739972476</a></p>
+                    <p>Email: <a href="mailto:info@site.com">info@site.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © All rights Reserved - Copyright @ 2024 > Bahar dir
+            </div>
+         </footer>
+          <!-- Login modal -->
+        <div class="login-modal" id="loginModal">
+            <div class="login-container">
+                <button class="close-btn" onclick="hideLogin()" style="width: 50px; height: 30px; background-color: whitesmoke;"><b>×</b></button>
+                <img src="images/LOGO1.png" alt="logo">
+                <h1>Login</h1>
+                <form action="" method="">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Log In</button>
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+                </form>
+            </div>
+        </div>
+        <div class="scroll-to-top" id="scrollToTopBtn"><b>↑</b></div>
+        <button id="theme-toggle" class="theme-button"></button>
+    </main>
+
+    
+
+    <script src="js/scripts.js"></script>
+    <!-- For fontawesome -->
+<script src="https://kit.fontawesome.com/0078100596.js" crossorigin="anonymous"></script>
+</body>
+</html>

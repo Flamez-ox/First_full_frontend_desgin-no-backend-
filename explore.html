@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Beautiful Bahir Dar</title>
+    <!-- Meta Description (Important for SEO) -->
+    <meta name="description" content="Come learn about Best Tour Experience in Beautiful Bahir Dar">
+
+    <!-- Meta Keywords (Deprecated for SEO but can be useful for other contexts) -->
+    <meta name="keywords" content="Best Travel and Tour Experience, Tour, Travel, Blue Nile, Lake Tana, Bahir Dar, Ethiopia">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- For Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link id="theme-stylesheet" rel="stylesheet" href="light/styles.css">
+</head>
+<body>
+    <!-- Header -->
+     
+    <header class="header">
+        <div class="container">
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+
+            <div class="logo">
+                <img src="images/LOGO1.png" alt="logo">
+                    <p>Project of students of CULS, for educational purpose</p>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown active"><a>Explore ▼</a>
+                        <div class="dropdown-content">
+                            <a href="explore.html">Events</a>
+                            <a href="gallery.html">Gallery</a> 
+                            <a href="accomdation.html">Accomodations</a>  
+                        </div> 
+                    </li>
+                    <li><a href="book-trip.html">Bookings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="show-login-btn" onclick="showLogin()"><i class="fa-solid fa-user"></i></button></li>
+                    
+                </ul>
+                <form class="search-box">
+                    <input type="text">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown" >
+                <a onclick="toggleMenu()">Explore ▼</a>
+                <div class="dropdown-content" id="dropdown-content">
+                    <a href="explore.html">Events</a>
+                    <a href="gallery.html">Gallery</a> 
+                    <a href="accomdation.html">Accomodations</a>  
+                    
+                </div>
+                
+            </li>
+            <li><a href="book-trip.html">Bookings</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="show-login-btn" onclick="showLogin()">Login <i class="fa-solid fa-user"></i></button>
+    </nav>
+    <br>
+    <br>
+<main>
+        <!-- Hero Section -->
+        <section class="explore-section">
+            <div class="content">
+                <h2>Explore Bahir Dar</h2>
+            </div>
+        </section>  
+        <section class="hotel-section">
+            <div class="hotel-content">
+              <h2>Bahir Dar's highlands</h2>
+              <p>
+                Experience the breathtaking views of Ethiopia's highlands, where local shepherds stand as guardians of a landscape rich with natural beauty and cultural heritage.
+              </p>
+            </div>
+            <div class="hotel-image-content">
+              <img src="images/explore/6.jpg" alt="Ethiopia's highlands">
+            </div>
+          </section>
+          <section class="hotel2-section">
+            <div class="hotel2-image-content">
+              <img src="images/explore/5.jpg" alt="Ethiopian Market">
+            </div>
+            <div class="hotel2-text-content">
+              <h2>Bahir Dar Market</h2>
+              <p>
+                Immerse yourself in the vibrant atmosphere of an Ethiopian market, where colorful baskets, fresh produce, and local crafts showcase the country's rich culture and traditions.
+              </p>
+            </div>
+          </section>
+          <section class="hotel-section">
+            <div class="hotel-content">
+              <h2>Rich flavors </h2>
+              <p>
+                Experience the rich flavors of Ethiopian cuisine with a vibrant platter of injera and traditional spiced dishes, offering a delicious and authentic taste of Ethiopian culture.
+              </p>
+            </div>
+            <div class="hotel-image-content">
+              <img src="images/explore/4.jpg" alt="Rich flavors of Ethiopian cuisine">
+            </div>
+          </section>
+<hr>
+<br>
+<!-- Newsletter sign up -->
+<section>
+<div class="subscription-container">
+    <div class="subscription-title">
+        Sign up for travel deals, news and inspiration
+    </div>
+    <form class="subscription-form">
+        <input type="email" class="subscription-input" placeholder="Enter your email" required>
+        <button type="submit" class="subscription-button">Subscribe Now</button>
+    </form>
+</div>
+</section>
+<br>
+         <footer>
+            <div class="footer">
+                <div class="footer-section about-us">
+                    <img src="images/LOGO1.png" alt="logo">
+                    <h3>About Us</h3>
+                    <p>
+                        We believe every trip should be as unique as you are. Whether it’s a romantic honeymoon, a solo backpacking adventure, or a group excursion, we ensure that your journey is filled with wonder, relaxation, and unforgettable moments.
+
+Let us guide you to the best tour and travel experiences of your life. Explore the world with Best Travel and Tour Experience, where adventure and comfort meet.
+
+
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="book-trip.html">Bookings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Tel: <a href="Tel:+420739972476">+420739972476</a></p>
+                    <p>Email: <a href="mailto:info@site.com">info@site.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © All rights Reserved - Copyright @ 2024 > Bahar dir
+            </div>
+         </footer>
+          <!-- Login modal -->
+        <div class="login-modal" id="loginModal">
+            <div class="login-container">
+                <button class="close-btn" onclick="hideLogin()" style="width: 50px; height: 30px; background-color: whitesmoke;"><b>×</b></button>
+                <img src="images/LOGO1.png" alt="logo">
+                <h1>Login</h1>
+                <form action="" method="">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Log In</button>
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+                </form>
+            </div>
+        </div>
+        <div class="scroll-to-top" id="scrollToTopBtn"><b>↑</b></div>
+        <button id="theme-toggle" class="theme-button"></button>
+</main>
+
+    
+
+    <script src="js/scripts.js"></script>
+    <!-- For fontawesome -->
+<script src="https://kit.fontawesome.com/0078100596.js" crossorigin="anonymous"></script>
+</body>
+</html>

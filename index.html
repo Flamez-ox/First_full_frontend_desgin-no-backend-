@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Bahir Dar</title>
+    <!-- Meta Description (Important for SEO) -->
+    <meta name="description" content="Beautiful Bahir Dar">
+
+    <!-- Meta Keywords (Deprecated for SEO but can be useful for other contexts) -->
+    <meta name="keywords" content="Best Travel and Tour Experience, Tour, Travel, Blue Nile, Lake Tana, Bahir Dar, Ethiopia">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link id="theme-stylesheet" rel="stylesheet" href="light/styles.css">
+
+    <!-- For Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header -->
+     
+    <header class="header">
+        <div class="container">
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+
+            <div class="logo">
+                <img src="images/LOGO1.png" alt="logo">
+                    <p>Project of students of CULS, for educational purpose</p>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-menu">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown"><a>Explore ▼</a>
+                        <div class="dropdown-content">
+                            <a href="explore.html">Events</a>
+                            <a href="gallery.html">Gallery</a> 
+                            <a href="accomdation.html">Accomodations</a> 
+                            
+                        </div>
+                        
+                    </li>
+                    <li><a href="book-trip.html">Plan Trip</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="show-login-btn" onclick="showLogin()"><i class="fa-solid fa-user"></i></button></li>
+                    
+                </ul>
+                <form class="search-box">
+                    <input type="text">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown"  >
+                <a onclick="toggleMenu()">Explore ▼</a>
+                <div class="dropdown-content" id="dropdown-content">
+                    <a href="explore.html">Events</a>
+                    <a href="gallery.html">Gallery</a> 
+                    <a href="accomdation.html">Accomodations</a> 
+                    
+                </div>
+                
+            </li>
+            <li><a href="book-trip.html">Plan Trip</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="show-login-btn" onclick="showLogin()">Login <i class="fa-solid fa-user"></i></button>
+    </nav>
+    <br>
+    <br>
+    <main>
+        <!-- Slider -->
+        <section class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    
+                    <img src="https://ai.stanford.edu/~latombe/mountain/photo/ethiopia-2012/tana/index_files/image003.jpg"  alt="Lake Tana">
+                    <h2 class="slide-caption">Lake Tana - <span>Largest Lake in Ethiopia</span></h2>
+                </div>
+                <div class="slide">
+                    <img src="https://imgix.brilliant-ethiopia.com/blue-nile-falls-1.JPG?auto=format,enhance,compress&fit=crop&crop=entropy,faces,focalpoint&w=1880&h=740&q=30"  alt="Blue Nile Falls">
+                    <h2 class="slide-caption"><span style="color: darkorange;">Blue Nile</span> -<span>Stunning Natural Wonder</span> </h2>
+                </div>
+                <div class="slide">
+                    <img src="https://farm9.staticflickr.com/8591/16648982211_24053074d6_b.jpg"  alt="Historic Monasteries">
+                    <h2 class="slide-caption">Historic Monasteries of <span>Bahir Dar</span></h2>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="next" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+        </section>    
+         <!-- City Hightlight -->
+         <section class="city-highlight">
+            <div class="city-container">
+                <div class="city-title">
+                    <h2>Best Tour experiences in Bahir Dar</h2>
+                </div>
+                
+                <h3>Why choose us?</h3>
+                <div class="city-content">
+                    <div class="city-main-image">
+                        <img src="images/about/bahir-dar-ethiopia.png" alt="Main Highlight">
+                    </div>
+                    <div class="city-text">
+                        <p>
+                            The palm-fringed university town of Bahir Dar nestles at the southern tip of the vast expanse of water 
+                            that is Lake Tana, Ethiopia’s largest lake. Its waters stretch over the horizon, more than 80km to the north. 
+                            On arrival, it’s not hard to imagine why Emperor Haile Sellasie built a modest palace here, even toying with 
+                            the idea of moving his country’s capital to this very place.  The palm-fringed university town of Bahir Dar nestles at the southern tip of the vast expanse of water 
+                            that is Lake Tana, Ethiopia’s largest lake. Its waters stretch over the horizon, more than 80km to the north. 
+                            On arrival, it’s not hard to imagine why Emperor Haile Sellasie built a modest palace here, even toying with 
+                            the idea of moving his country’s capital to this very place.
+                        </p>
+                        <button class="city-more-btn">More</button>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <hr>
+                    <br>
+                </div>
+                <div class="city-image-row">
+                    <div class="city-image-item">
+                        <img src="images/about/1.jpg" alt="Highlight 1">
+                        <div class="city-caption">Stunning natural scenery</div>
+                    </div>
+                    <div class="city-image-item">
+                        <img src="images/about/5.jpg" alt="Highlight 2">
+                        <div class="city-caption">Rich cultural heritage</div>
+                    </div>
+                    <div class="city-image-item">
+                        <img src="images/about/2.jpg" alt="Highlight 3">
+                        <div class="city-caption">Historic monasteries and churches</div>
+                    </div>
+                </div>
+            </div>
+            <div class="animated-div" style="height: 100px; width:auto;">
+            </div>
+            <br>
+            <div class="next-city-content">
+                <div class="next-city-text">
+                    <p>
+                        The palm-fringed university town of Bahir Dar nestles at the southern tip of the vast expanse of water 
+                        that is Lake Tana, Ethiopia’s largest lake. Its waters stretch over the horizon, more than 80km to the north. 
+                        On arrival, it’s not hard to imagine why Emperor Haile Sellasie built a modest palace here, even toying with 
+                        the idea of moving his country’s capital to this very place.  The palm-fringed university town of Bahir Dar nestles at the southern tip of the vast expanse of water 
+                        that is Lake Tana, Ethiopia’s largest lake. Its waters stretch over the horizon, more than 80km to the north. 
+                        On arrival, it’s not hard to imagine why Emperor Haile Sellasie built a modest palace here, even toying with 
+                        the idea of moving his country’s capital to this very place.
+                    </p>
+                    <button class="next-city-more-btn">More</button>
+                </div>
+            </div>
+        </section>
+        <section class="experiences-section">
+            <div class="experiences-container">
+                <div class="experiences-section-header">
+                    <h3>Explore Interesting Facts</h3>
+                    <h2>Experiences Away From Crowd</h2>
+                </div>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="icon">
+                            <img src="images/features/followers.png" alt="Followers Icon">
+                        </div>
+                        <h4><strong>150+</strong> Followers</h4>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <img src="images/features/boat.png" alt="Canoe Icon">
+                        </div>
+                        <h4>Canoe Cruise</h4>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <img src="images/features/road-trip.png" alt="Road Trip Icon">
+                        </div>
+                        <h4>Road Trip</h4>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <img src="images/features/route.png" alt="Road Trip Icon">
+                        </div>
+                        <h4>Reserve Locations</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!-- Carousel -->
+        <section>
+            <div class="carousel-container">
+                <div class="carousel-title">
+                    <h2>Top Rated Experiences In Ethiopia</h2>
+                </div>
+                
+        
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="images/about/01.jpg" alt="Item 1">
+                        <h3>Lake Tana</h3>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        <button>BUTTON</button> -->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/about/03.jpg" alt="Item 2">
+                        <h3>Blue Nile Falls</h3>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        <button>BUTTON</button> -->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/about/Lake-Ziway-and-Rift-Valley-Day-Tour-Hidden-Treasures-Tours-and-Transfes-in-Ethiopia-My-Ethiopia-Travel.jpg" alt="Item 3">
+                        <h3>Lake Ziway and Rift Valley</h3>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        <button>BUTTON</button> -->
+                    </div>
+                </div>
+        
+                <!-- Navigation -->
+                <button class="carousel-nav left" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-nav right" onclick="nextSlide()">&#10095;</button>
+        
+                <!-- Dots -->
+                <div class="carousel-dots">
+                    <div class="carousel-dot" onclick="setSlide(0)"></div>
+                    <div class="carousel-dot" onclick="setSlide(1)"></div>
+                    <div class="carousel-dot" onclick="setSlide(2)"></div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <br>
+        <!-- Newsletter sign up -->
+         <section>
+            <div class="subscription-container">
+                <div class="subscription-title">
+                   <h2>Sign up for travel deals, news and inspiration</h2> 
+                </div>
+                <form class="subscription-form">
+                    <input type="email" class="subscription-input" placeholder="Enter your email" required>
+                    <button type="submit" class="subscription-button">Subscribe Now</button>
+                </form>
+            </div>
+         </section>
+         <section class="staff-section">
+            <div class="staff-container">
+                <div class="staff-section-section-header">
+                    <h3>
+                        Our Guides & Staffs</h3>
+                    <h2>A full team of experts with you before, during and after the journey, who also collaboratored in the Project</h2>
+                </div>
+            </div>
+            <div class="staff-image-row">
+                <div class="staff-image-item">
+                    <img src="images/profile/profile.png" alt="Highlight 1">
+                    <div class="staff-caption">Seid ZemZem <span>Mustofa</span></div>
+                </div>
+                <div class="staff-image-item">
+                    <img src="images/profile/profile.jpg" alt="Highlight 2">
+                    <div class="staff-caption">Mighty <span>Pasurai</span></div>
+                </div>
+                <div class="staff-image-item">
+                    <img src="images/profile/profile.jpg" alt="Highlight 3">
+                    <div class="staff-caption">Mark-Anthony <span>Ekeh</span></div>
+                </div>
+            </div>
+         </section>
+         <footer>
+            <div class="footer">
+                <div class="footer-section about-us">
+                    <img src="images/LOGO1.png" alt="logo">
+                    <h3>About Us</h3>
+                    <p>
+                        We believe every trip should be as unique as you are. Whether it’s a romantic honeymoon, a solo backpacking adventure, or a group excursion, we ensure that your journey is filled with wonder, relaxation, and unforgettable moments.
+
+Let us guide you to the best tour and travel experiences of your life. Explore the world with Best Travel and Tour Experience, where adventure and comfort meet.
+
+
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="book-trip.html">Bookings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Tel: <a href="Tel:+420739972476">+420739972476</a></p>
+                    <p>Email: <a href="mailto:info@site.com">info@site.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © All rights Reserved - Copyright @ 2024 > Bahar dir
+            </div>
+         </footer>
+        <!-- Login modal -->
+        <div class="login-modal" id="loginModal">
+            <div class="login-container">
+                <button class="close-btn" onclick="hideLogin()" style="width: 50px; height: 30px; background-color: whitesmoke;"><b>×</b></button>
+                <img src="images/LOGO1.png" alt="logo">
+                <h1>Login</h1>
+                <form action="" method="">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Log In</button>
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+                </form>
+            </div>
+        </div>
+        <div class="scroll-to-top" id="scrollToTopBtn"><b>↑</b></div>
+        <button id="theme-toggle" class="theme-button"></button>
+    </main>
+
+    
+
+    <script src="js/scripts.js"></script>
+    <!-- For fontawesome -->
+<script src="https://kit.fontawesome.com/0078100596.js" crossorigin="anonymous"></script>
+</body>
+</html>
